@@ -1,0 +1,20 @@
+﻿@model WebExercise04.Models.NewsList
+
+@{
+    ViewBag.Title = "List_Single";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="body-home-page body-content">
+    @foreach (var n in Model.News)
+    {
+        <div class="SingleList_Title">
+            @n.Title
+        </div>
+        <div class="SingleList_Content">
+            @n.Content
+        </div>
+        <div class="SingleList_Return">
+            <span>@Html.ActionLink("所有新闻", "List_All", "News")</span>
+        </div>
+    }
+</div>

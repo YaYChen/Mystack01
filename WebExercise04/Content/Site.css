@@ -1,0 +1,382 @@
+﻿
+body {
+    
+}
+
+/*--------------------------------------- Home page css *************************************/
+.body-home-page{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+.home-page-heard{
+   margin:0;
+   padding:0;
+   width:1000px;
+   height:150px;
+   border-top-style:solid;
+   border-top-width:10px;
+   border-top-color:rebeccapurple;
+   border-bottom-style:solid;
+   border-bottom-width:thin;
+   border-bottom-color:rebeccapurple;
+   
+}
+.home-page-navigation-bar{
+     width:1000px;
+     height:50px;
+     margin:0;
+	 padding:0;
+     border:none;
+     position:relative;
+     border-bottom:solid thin rebeccapurple;
+}
+.body-content {
+    width:1000px;
+    height:auto;
+    text-align:left;
+}
+.home-page-content-add{
+    width:1000px;
+    height:200px;
+    background-color:rebeccapurple;
+}
+.home-page-footer{
+    width:1000px;
+    height:50px;
+    background-color:rebeccapurple;
+    font-family:'Microsoft YaHei';
+    font-size:medium;
+    color:white;
+    margin-bottom:20px;
+}
+/*------------------------------------home page nav bar css------------------------------*/
+.hp-nav-div{
+	border:none;
+	margin: 0;
+	padding: 0;
+	width:1000px;
+	height:50px;
+	background-color: rebeccapurple;
+}
+.nav-ul{
+    margin: 0;
+	padding: 0;
+	width:auto;
+	height:50px;
+	background-color: rebeccapurple;
+}
+.hp-li{
+    list-style:none;
+	margin: 0;
+	padding: 0;
+    float:left;
+	background-color: rebeccapurple;
+	cursor: pointer;
+	width:125px;
+	height:50px;
+	line-height: 50px;
+	position: relative;
+	font-family: 'microsoft YaHei';
+	font-size: 16px;
+	color: white;
+}
+.hp-li a{
+    display:block;
+	height:50px;
+    width:auto;
+    font-family: 'microsoft YaHei';
+	font-size: 16px;
+	color: white;
+    text-decoration:none;
+    cursor: pointer;
+}
+.hp-li a:hover{
+	color: white;
+    text-decoration:none;
+    cursor: pointer;
+}
+.hp-li ul{
+    clear:initial;
+    position:absolute;
+    display:none;
+    width:100px;
+}
+.hp-li:hover{
+    background-color: darkslategray;
+    color:white;
+}
+.hp-li:hover ul{
+    position:absolute;
+    display:block;
+    top:50px;
+    z-index:99;
+}
+.span_triangle_down{
+    float:right;
+    margin-top:20px;
+    margin-right:10px;
+    border-width:5px;
+    border-color:white transparent transparent transparent;
+    border-style:solid;
+    width:0;
+    height:0;
+    line-height:0;
+    overflow:hidden;
+    cursor:pointer;
+}
+/*----------**********TAb TAB TAB TAB************************************************************/
+.tab_head{
+    width:100%;
+    height:30px;
+    background-color:rebeccapurple;
+    margin:0;
+    padding:0;
+}
+.tab_head span{
+    margin-left: 10px;
+    font-family: 'microsoft YaHei';
+    font-weight:lighter;
+	font-size:larger;
+    color: white;
+}
+.tab_body{
+    width:100%;
+    height:240px;
+}
+.tabList_PriefItem{
+    height:30px;
+    width:100%;
+    text-align:left;
+}
+.tabList_PriefItem a{
+    display:block;
+    height:30px;
+    width:100%;
+    line-height:30px;
+    overflow:hidden;
+    font-family:'Microsoft YaHei';
+    font-size:medium;
+    color:rebeccapurple;
+    text-decoration:none;
+    text-align:left;
+    cursor: pointer;
+}
+.tabList_PriefItem a:hover{
+    text-decoration:none;
+    background-color:rebeccapurple;
+    color:white;
+}
+.tabList_PriefItem_more{
+    clear:both;
+    height:30px;
+    width:100%;
+    border-top:solid thin rebeccapurple;
+}
+.tabList_PriefItem_more_div{
+    height:30px;
+    width:100px;
+    float:left;
+}
+.tabList_PriefItem_more_div a{
+    display:block;
+    height:28px;
+    width:100px;
+    text-align:center;
+     cursor: pointer;
+     font-family:'Microsoft YaHei';
+    font-size:large;
+    color:rebeccapurple;
+    text-decoration:none;
+}
+.tabList_PriefItem_more_div a:hover{
+    text-decoration:none;
+    background-color:rebeccapurple;
+    color:white;
+}
+#tab_head_a1{
+    display:block;
+	height:30px;
+    width:auto;
+    font-family: 'microsoft YaHei';
+	font-size: 20px;
+	color: rebeccapurple;
+    text-decoration:none;
+    cursor: pointer;
+}
+#tab_head_a1:hover{
+    color: #EB3C00;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+#tab_head_a2{
+    display:block;
+	height:30px;
+    width:auto;
+    font-family: 'microsoft YaHei';
+	font-size: 20px;
+	color: rebeccapurple;
+    text-decoration:none;
+    cursor: pointer;
+}
+#tab_head_a2:hover{
+    color: #EB3C00;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+#tab_head_a3{
+    display:block;
+	height:30px;
+    width:auto;
+    font-family: 'microsoft YaHei';
+	font-size: 20px;
+	color: rebeccapurple;
+    text-decoration:none;
+    cursor: pointer;
+}
+#tab_head_a3:hover{
+    color: #EB3C00;
+    text-decoration:none;
+    cursor: pointer;
+}
+/* ------------Set width on the form input elements since they're 100% wide by default -------------*/
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+/*------------------------------------PageHelperCSS-----------------------------------------------------*/
+div.pager{
+    text-align:right;
+    border-top:2px solid rebeccapurple;
+    padding:0 .4em 0 .4em;
+}
+div.pager a{
+    width:100%;
+    height:auto;
+    font-size:1.1em;
+    color:rebeccapurple;
+    text-decoration:none;
+    padding:0 .4em 0 .4em;
+}
+div.pager a:hover{
+    background-color:rebeccapurple;
+    color:white;
+}
+div.pager a.selected{
+    background-color:rebeccapurple;
+    color:white;
+}
+/* -----------------------------------Styles for introduce----------------------------------------*/
+.introduce_div_css{
+    height:800px;
+    width:1000px;
+    overflow:scroll;
+}
+/* -----------------------------------Styles for validation helpers----------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+/* -----------------------------------UsefulLinks Style----------------------------------------*/
+.usefullinks_mainbox{
+    height:200px;
+    width:1000px;
+    margin:0;
+    padding:0;
+    overflow:auto;
+}
+.usefullinks_rowbox{
+	height: 40px;
+	width: 1000px;
+	margin:0;
+    padding:0;
+	border: 1em;
+}
+.usefullinks_box{
+	height:40px;
+	width: 200px;
+	margin:0;
+    padding: 0 ;
+	border: none;
+	float: left;
+	text-align: center;
+	background-color: red;
+}
+.usefullinks_box_img{
+	height: 40px;
+	width: 40px;
+	margin:0;
+    padding:0;
+	border: none;
+	float: left;
+}
+.usefullinks_img{
+	height: 100%;
+	width: 100%;
+}
+.usefullinks_box_a{
+	height: 40px;
+	width: 160px;
+	margin:0;
+    padding:0;
+	border: none;
+	float: left;
+	text-align: center;
+}
+.usefullinks_a{
+	display: block;
+	height: 40px;
+	line-height:40px;   
+	width: 160px;
+	margin:0;
+    padding:0;
+	border: none;
+	color: black;
+	font-size: x-large;
+	overflow: hidden;
+	white-space:nowrap; 
+	text-overflow:ellipsis; 
+	-o-text-overflow:ellipsis;
+}
+.usefullinks_a:hover{
+	background-color: black;
+	color: gainsboro;
+}

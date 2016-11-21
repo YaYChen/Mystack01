@@ -1,0 +1,13 @@
+﻿@model WebExercise04.Models.ResearchNewsList
+
+@foreach (var n in Model.ResearchNews)
+{
+    <div class="tabList_PriefItem">
+        <span>@Html.ActionLink("[" + n.Time + "]" + n.Title + "", "List_Single", "ResearchNews", new { ResearchNewsID = n.ID }, null)</span>
+    </div>
+}
+<div class="tabList_PriefItem_more">
+    <div class="tabList_PriefItem_more_div">
+        <span>@Html.ActionLink("More", "List_All", "ResearchNews")</span>
+    </div>
+</div>

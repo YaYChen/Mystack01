@@ -1,0 +1,21 @@
+﻿@model WebExercise04.Models.UsefulLinksList
+
+<div class="usefullinks_mainbox">
+    @foreach (var n in Model.UsefulLinksListGroup)
+    {
+        <div class="usefullinks_rowbox">
+            @foreach (var m in n)
+            {
+                <div class="usefullinks_box">
+                    <div class="usefullinks_box_img">
+                        <img  class="usefullinks_img" src=""/>
+                    </div>
+                    <div class="usefullinks_box_a">
+                        <a class="usefullinks_a" href="@m.Link" title="@m.Title">@m.Title</a>
+                    </div>
+                </div>
+            }
+        </div>
+        
+    }
+</div>

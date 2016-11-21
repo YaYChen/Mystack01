@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/bootstrap.min.js")
+@Scripts.Render("~/Scripts/jquery.min.js")
+@Styles.Render("~/Content/bootstrap.min.css")
+<div class="body-home-page body-content">
+    <div id="Home_News_Content">
+        @{Html.RenderAction("List_Prief", "News");  }
+    </div>
+</div>
+<!-- tab标签 -->
+<div class="body-home-page body-content">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a id="tab_head_a1" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseOne">
+                        通知公告
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    @{Html.RenderAction("Inform_Prief", "Inform");  }
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a id="tab_head_a2" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseTwo">
+                        科研动态
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    @{Html.RenderAction("List_Prief", "ResearchNews");  }
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a id="tab_head_a3" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseThree">
+                        学术活动
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    @{Html.RenderAction("List_Prief", "Activities");  }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body-home-page body-content home-page-content-add">
+    @{Html.RenderAction("List_All", "UsefulLinks");  }
+</div>
+

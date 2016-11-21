@@ -1,0 +1,21 @@
+﻿@model WebExercise04.Models.ActivitiesList
+
+@{
+    ViewBag.Title = "List_All";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="body-home-page body-content">
+    <div class="AllList_Title">
+        <p>学术活动</p>
+    </div>
+    @foreach (var n in Model.Activities)
+    {
+        <div class="AllList_Item">
+            @Html.ActionLink("[" + n.Time + "]" + n.Title + "", "List_Single", "Activities", new { ActivitiesID =n.ID},null)
+        </div>
+    }
+
+    <div class="pager">
+        @Html.PageLinks(Model.PageInfo, x => Url.Action("List_All", new { page = x }))
+    </div>
+</div>

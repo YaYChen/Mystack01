@@ -1,0 +1,13 @@
+﻿@model WebExercise04.Models.ActivitiesList
+
+@foreach (var n in Model.Activities)
+{
+    <div class="tabList_PriefItem">
+        <span>@Html.ActionLink("[" + n.Time + "]" + n.Title + "", "List_Single", "Activities", new { ActivitiesID = n.ID }, null)</span>
+    </div>
+}
+<div class="tabList_PriefItem_more">
+    <div class="tabList_PriefItem_more_div">
+        <span>@Html.ActionLink("More", "List_All", "Activities")</span>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+﻿@model WebExercise04.Models.AllIntroduceList
+
+@{
+    ViewBag.Title = "Introduce";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="body-home-page body-content">
+    @foreach (var n in Model.AllIntroduce.Where(n=>n.ID==1))
+    {
+        <div class="introduce_div_css">
+            @n.Content
+        </div>
+
+    }
+</div>

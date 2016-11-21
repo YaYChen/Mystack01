@@ -1,0 +1,22 @@
+﻿@model WebExercise04.Models.ResearchNewsList
+
+@{
+    ViewBag.Title = "List_All";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="body-home-page body-content">
+    <div class="AllList_Title">
+        <p>科研动态</p>
+    </div>
+    @foreach (var n in Model.ResearchNews)
+    {
+        <div class="AllList_Item">
+            @Html.ActionLink("[" + n.Time + "]" + n.Title + "", "List_Single", "ResearchNews", new { ResearchNewsID = n.ID },null)
+        </div>
+    }
+
+    <div class="pager">
+        @Html.PageLinks(Model.PageInfo, x => Url.Action("List_All", new { page = x }))
+    </div>
+</div>
+

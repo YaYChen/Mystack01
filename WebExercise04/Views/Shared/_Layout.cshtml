@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Show_AllList.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div align="center">
+        <div class="body-home-page home-page-heard">
+
+        </div>
+
+        <div class="body-home-page home-page-navigation-bar">
+            <div class="hp-nav-div">
+                <ul class="nav-ul">
+                    <li class="hp-li">@Html.ActionLink("首页","Index","Home")</li>
+                    <li class="hp-li">@Html.ActionLink("研究所简介", "Introduce", "AllIntroduce")</li>
+                    <li class="hp-li">
+                        科研信息
+                        <span class="span_triangle_down"></span>
+                        <ul class="nav-ul">
+                            <li class="hp-li"></li>
+                            <li class="hp-li"></li>
+                        </ul>
+                    </li>
+                    <li class="hp-li">
+                        师资队伍
+                        <span class="span_triangle_down"></span>
+                        <ul class="nav-ul">
+                            <li class="hp-li">@Html.ActionLink("教师队伍", "List_All", "Teachers")</li>
+                            <li class="hp-li">研究生</li>
+                        </ul>
+                    </li>
+                    <li class="hp-li">招生信息</li>
+                    <li class="hp-li">仪器设备</li>
+                    <li class="hp-li">常用下载</li>
+                    <li class="hp-li">管理员</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            @RenderBody()
+        </div>
+
+        <div class="body-home-page">
+            <div class="home-page-footer">
+                <p>&copy; @DateTime.Now.ToString("D") - My ASP.NET Application</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

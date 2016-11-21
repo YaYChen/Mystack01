@@ -1,0 +1,29 @@
+﻿@model WebExercise04.Models.TeachersList
+
+@{
+    ViewBag.Title = "List_All";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Styles.Render("~/Content/Teachers_Card.css")  
+<div class="body-home-page body-content">
+    @foreach (var n in Model.Teachers)
+    {
+        <div class="card_box">
+            <div class="card_box_img">
+                <img style="height:140px;width:100px" />
+            </div>
+            <div class="card_box_content"> 
+                <span class="card_box_content_span">姓名：@n.Name</span>
+                <span class="card_box_content_span">职称：@n.Title</span>
+                <span class="card_box_content_span">电话：@n.Tell</span>
+                <span class="card_box_content_span">E_Mail:@n.E_Mail</span>
+                <span class="card_box_content_span">研究方向：@n.Direction</span>
+                <span class="card_box_content_span">@Html.ActionLink("详细资料", "List_Single", "Teachers", new { teachersID = n.ID }, null)</span>
+            </div>
+        </div>
+    }
+
+    <div class="pager">
+        @Html.PageLinks(Model.PageInfo, x => Url.Action("List_All", new { page = x }))
+    </div>
+</div>

@@ -1,0 +1,76 @@
+﻿body {
+}
+/*----------------------AllListCss-------------------------*/
+.AllList_Title {
+    width:100%;
+    height:auto;
+    text-align:left;
+    border-bottom:2px solid rebeccapurple;
+    margin-bottom:1em;
+}
+.AllList_Title p{
+    font-family:'Microsoft YaHei';
+    font-size:xx-large;
+    color:rebeccapurple;
+    background-color:white;
+}
+.AllList_Item{
+    width:1000px;
+    height:auto;
+    text-align:left;
+}
+.AllList_Item a{
+    display:block;
+    height:30px;
+    width:100%;
+    line-height:30px;
+    overflow:hidden;
+    font-family:'Microsoft YaHei';
+    font-size:medium;
+    color:rebeccapurple;
+    text-decoration:none;
+    text-align:left;
+    cursor: pointer;
+}
+.AllList_Item a:hover{
+    background-color:rebeccapurple;
+    color:white;
+}
+/*----------------------SingleListCss-------------------------*/
+.SingleList_Title{
+    height:auto;
+    width:100%;
+    text-align:center;
+    font-family:'Microsoft YaHei';
+    font-size:x-large;
+    color:rebeccapurple;
+    background-color:white;
+    border-bottom:dotted thin rebeccapurple;
+}
+.SingleList_Content{
+    text-align:justify;
+    height:auto;
+    width:100%;
+}
+.SingleList_Return{
+    height:30px;
+    width:100%;
+    border-top:solid thin rebeccapurple;
+}
+.SingleList_Return a{
+    display:block;
+    height:30px;
+    width:100px;
+    text-align:center;
+    cursor: pointer;
+    font-family:'Microsoft YaHei';
+    font-size:large;
+    color:rebeccapurple;
+    text-decoration:none;
+    background-color:white;
+}
+.SingleList_Return a:hover{
+     color:white;
+    text-decoration:none;
+    background-color:rebeccapurple;
+}
